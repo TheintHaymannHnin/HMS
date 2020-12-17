@@ -1,0 +1,485 @@
+.fixMe{
+  background-color: sienna;
+}
+
+.masthead{
+  height: 550px;
+ border: 2px solid;
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+h1 {
+   font-size:400% ; 
+}
+.subheading{
+   font-size:150%
+}
+h2 {
+   font-size:250% ;
+   text-align: center;
+}
+.contactus{
+   background: url('https://image.freepik.com/free-photo/abstract-blur-luxury-hotel-lobby-background_1339-98452.jpg') no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ background-size: cover;
+ -o-background-size: cover;
+}
+
+.pgbar{
+  background: url('https://www.callcentrehelper.com/images/stories/2019/02/5-stars-on-table-760.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+-o-background-size: cover;
+width: 600px;
+}
+
+.flip-box {
+   background-color:transparent;
+   width: 400px;
+   height: 280px;
+   border: 1px solid #f1f1f1;
+   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+   /* transparent */
+ }
+ 
+ /* This container is needed to position the front and back side */
+ .flip-box-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+ }
+  /* rooms */
+
+
+ /* Do an horizontal flip when you move the mouse over the flip box container */
+ .flip-box:hover .flip-box-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ /* Position the front and back side */
+ .flip-box-front, .flip-box-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+   backface-visibility: hidden;
+ }
+ 
+ /* Style the front side (fallback if image is missing) */
+ .flip-box-front {
+   background-color: #bbb;
+   color: black;
+ }
+ 
+ /* Style the back side */
+ .flip-box-back {
+   background-color: dodgerblue;
+   color: rgb(15, 12, 12);
+   transform: rotateY(180deg);
+ }
+
+
+
+ /* Style buttons */
+.buttonload btn-lg{
+   background-color: dodgerblue; /* Green background */
+   border: none; /* Remove borders */
+   color: black; /* White text */
+   padding: 12px 16px; /* Some padding */
+   font-size: 16px /* Set a font size */
+ }
+  
+ /* foods and drinks */
+ .zoom {
+   /* padding: 50px; */
+   background-color: green;
+   transition: transform .2s; /* Animation */
+   width: 250px;
+   height: 250px;
+   margin: 0 auto;
+ }
+ 
+ .zoom:hover {
+   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
+
+
+ /* .image:hover {
+   animation: shake 0.5s;
+   animation-iteration-count: infinite;
+ }
+ 
+ @keyframes shake {
+   0% { transform: translate(1px, 1px) rotate(0deg); }
+   10% { transform: translate(-1px, -2px) rotate(-1deg); }
+   20% { transform: translate(-3px, 0px) rotate(1deg); }
+   30% { transform: translate(3px, 2px) rotate(0deg); }
+   40% { transform: translate(1px, -1px) rotate(1deg); }
+   50% { transform: translate(-1px, 2px) rotate(-1deg); }
+   60% { transform: translate(-3px, 1px) rotate(0deg); }
+   70% { transform: translate(3px, 1px) rotate(-1deg); }
+   80% { transform: translate(-1px, -1px) rotate(1deg); }
+   90% { transform: translate(1px, 2px) rotate(0deg); }
+   100% { transform: translate(1px, -2px) rotate(-1deg); }
+ }
+   */
+
+ /* resturant */
+ #myImg {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+ 
+ #myImg:hover {opacity: 0.8;}
+ 
+ /* The Modal (background) */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content (image) */
+ .modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+ }
+ 
+ /* Caption of Modal Image */
+ #caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+ }
+ 
+ /* Add Animation */
+ .modal-content, #caption {  
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.6s;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+ }
+ 
+ @-webkit-keyframes zoom {
+   from {-webkit-transform:scale(0)} 
+   to {-webkit-transform:scale(1)}
+ }
+ 
+ @keyframes zoom {
+   from {transform:scale(0)} 
+   to {transform:scale(1)}
+ }
+ 
+ /* The Close Button */
+ .close {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ /* 100% Image Width on Smaller Screens */
+ @media only screen and (max-width: 700px){
+   .modal-content {
+     width: 100%;
+   }
+ }
+ /* gallery  */
+/* 
+ * {
+   box-sizing: border-box;
+  
+ } */
+ 
+ img {
+   vertical-align: middle;
+ }
+ 
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+   position: relative;
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+ 
+ /* Add a pointer when hovering over the thumbnail images */
+ .cursor {
+   cursor: pointer;
+ }
+ 
+ /* Next & previous buttons */
+ .prev,
+ .next {
+   cursor: pointer;
+   position: absolute;
+   top: 40%;
+   width: auto;
+   padding: 16px;
+   margin-top: -50px;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* Container for image text */
+ .caption-container {
+   text-align: center;
+   background-color:black;
+   /* padding: 2px 16px; */
+   color:white;
+   height:40px;
+ }
+ 
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Six columns side by side */
+ .column {
+   float: left;
+   width: 16.66%;
+ }
+ 
+ /* Add a transparency effect for thumnbail images */
+ .demo {
+   opacity: 0.6;
+ }
+ 
+ .active,
+ .demo:hover {
+   opacity: 1;
+ }
+
+ /* rating  */
+
+ 
+
+.heading {
+  font-size: 33px;
+  margin-right: 25px;
+ /* font-weight: bold; */
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+ 
+/* progress bar */
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+ /* thank you */
+ .img1-circular{
+  width: 250px;
+  height: 250px;
+  background-image: url('https://thumbs.dreamstime.com/b/asian-hotel-staff-greeting-hands-put-together-portrait-41208790.jpg');
+  background-size: cover;
+  display: block;
+  border-radius: 150px;
+ -webkit-border-radius: 150px;
+ -moz-border-radius: 150px;
+ }
+ .img2-circular{
+  width: 250px;
+  height: 250px;
+  background-image: url('https://blog.accredited-online-colleges.com/wp-content/uploads/2012/03/Hotel-Management-TS.jpg');
+  background-size: cover;
+  display: block;
+  border-radius: 150px;
+ -webkit-border-radius: 150px;
+ -moz-border-radius: 150px;
+ }
+ .img3-circular{
+  width: 250px;
+  height: 250px;
+  background-image: url('https://image.freepik.com/free-photo/team-chefs-smiling-commercial-kitchen_107420-21941.jpg');
+  background-size: cover;
+  display: block;
+  border-radius: 150px;
+ -webkit-border-radius: 150px;
+ -moz-border-radius: 150px;
+ }
+ .img4-circular{
+  width: 250px;
+  height: 250px;
+  background-image: url('https://www.trinityeventstaffing.com/wp-content/uploads/2019/04/Waitstaff-in-Dallas-Texas-1.jpg');
+  background-size: cover;
+  display: block;
+  border-radius: 150px;
+ -webkit-border-radius: 150px;
+ -moz-border-radius: 150px;
+ }
+
+ /* thank  */
+ #container {
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: rgb(19, 13, 1);
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3px;
+	height: 50px;
+	background-color: orange;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: orange; 
+	}
+}
+ 
+/* font */
+.font1{
+  font-family: 'Sansita Swashed', cursive;
+}
+#navbar{
+  font-family: 'Roboto', sans-serif;
+
+}
+.font2{
+  font-family: 'Roboto', sans-serif;
+}
+
+#btn {  
+  position: absolute;
+  bottom: 20px;
+  float: right;
+  right: 20.5%;
+  left: 77.25%;
+  max-width: 90px;
+  width: 100%;
+  font-size: 10px;
+  border-color:black;
+  background-color:brown;
+  padding: .5px;
+  border-radius: 4px;
+  font-weight: lighter;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#btn:hover {
+  background-color:black;
+}

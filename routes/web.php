@@ -14,7 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('admin.index');
+    return view('ui.landing');
 });
 
+Route::get('/dashboard', function () {
+    return view('admin.master');
+ });
 
+Route::resource('/posts','App\Http\Controllers\PostController');
+
+Route::resource('/users','App\Http\Controllers\UserController');
+Route::resource('/room_types','App\Http\Controllers\Room_typeController');
+Route::resource('/rooms','App\Http\Controllers\RoomController');
+Route::get('/showrooms','App\Http\Controllers\ShowroomController@showroom');
