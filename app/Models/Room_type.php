@@ -11,6 +11,12 @@ class Room_type extends Model
     protected $guarded=[];
     public function rooms()
     {
-        return $this->hasMany('App\Room');
+        return $this->hasMany('App\Models\Room');
     }
+
+    public function room()
+    {
+        return $this->belongsTo('App\Models\Room','room_type_id');
+    }
+    
 }

@@ -270,6 +270,7 @@
 
     <!-- Custom Theme Scripts -->
     <script src="{{asset('build/js/custom.min.js')}}"></script>
+    @yield('js')
 	
   </body>
 </html>

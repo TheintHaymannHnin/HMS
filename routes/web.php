@@ -27,3 +27,4 @@ Route::resource('/users','App\Http\Controllers\UserController');
 Route::resource('/room_types','App\Http\Controllers\Room_typeController');
 Route::resource('/rooms','App\Http\Controllers\RoomController');
 Route::get('/showrooms','App\Http\Controllers\ShowroomController@showroom');
+Route::get('/room-details-api/{roomId}','App\Http\Controllers\ShowroomController@roomDetailsApi');

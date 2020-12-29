@@ -11,9 +11,14 @@ class ShowroomController extends Controller
 {
     public function showroom()
     {
-        $rooms=Room::all();
-        $room_types=Room_type::all();
         
-        return view('admin.room.showroom',compact('rooms','room_types'));
+        $room_types=Room_type::all();
+        // return $room_types;
+        return view('admin.room.showroom',compact('room_types'));
+    }
+    public function roomDetailsApi($roomId)
+    {
+        $room=Room::with('room_type')->findOrFail($roomId);
+        return $room;
     }
 }
